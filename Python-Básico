@@ -1,0 +1,116 @@
+#Tipos Basicos
+
+#Esto es una cadena
+c = "Hello Word"
+# Esto es un entero
+e = 23
+#Podemos comprobarlo con la funcion -type
+type(c)
+type(e)
+
+#Complejos
+complejo=2.1+7.8j
+print(c,e,complejo)
+
+"""OPERADORES ARITMETICOS"""
+
+#Sume
+r1=3+2
+#Resta
+r2=4-7
+#Negacion
+r3=-7
+#Multiplicacion
+r4=2*6
+#Exponente
+r5=3.5**6
+#Division
+r6=3.5/2
+#Division entera
+r7=3.5//2
+#Modulpo
+r8=7%2
+print(f"{r1},{r2},{r3},{r4},{r5},{r6},{r7},{r8}")
+
+"""OPERADORES ARITMETICOS"""
+#and
+r1=3&2
+#or
+r2=3|2
+#xor
+r3=3^2
+#not
+r4=~3
+#desplazamiento izq
+r5=3<<1
+#dezplazamiento der.
+r6=3>>1
+print(f"{r1},{r2},{r3},{r4},{r5},{r6}")
+
+#Booleanos
+
+#and
+r1=True and False
+#or
+r2=True or False
+#not
+r3=not True
+#igual
+r4=5==3
+#diferente
+r5=5!=3
+#menor que
+r6=5<3
+#mayor que
+r7=5>3
+#menor o igual que
+r8=5<=5
+#mayor o igual que
+r9=5>=3
+print(f"{r1},{r2},{r3},{r4},{r5},{r6},{r7},{r8},{r9}")
+
+"""LISTAS"""
+l=[22,True,"una lista",[1,2]]
+print(l)
+
+"""TUPLAS"""
+t=(1,2,True,"Python")
+print(t)
+"""DICCIONARIOS"""
+d={
+"one":"marco",
+"dos":"antonio",
+}
+print(d)
+
+"""SENTENCIAS"""
+
+#condicional
+fav=input("ingresa:")
+if fav=="mundo":
+    print("samira-mira eh-eh")
+    print("waka-waka eh-eh")
+elif fav=="hola":
+    print("chanchito feliz")
+else:
+    print("-.-")
+
+#bucle
+
+edad=0
+while edad<18:
+    edad=edad+1
+    print("Felicidades, tienes "+str(edad))
+
+#secuencia
+
+secuencia = ["uno","dos","tres"]
+for elemento in secuencia:
+    print(elemento)
+
+#FUNCIONES
+
+def mi_funcion(param1,param2):
+    print(param1)
+    print(param2)
+mi_funcion("Hola","Mundo")
